@@ -1,7 +1,6 @@
 # learncpp
 my notes from learncpp.com
 
-++++++++++++++++++++++++++++++++++++++
 Identifiers: Names with which we can access the variables, functions, classes etc..
 
 assigning value of a integer variable:
