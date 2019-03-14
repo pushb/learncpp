@@ -1,4 +1,3 @@
-
 Identifiers: Names with which we can access the variables, functions, classes etc..
 
 assigning value of a integer variable:
@@ -200,3 +199,45 @@ Vectors:
 		vect1.resize(new_size)
 	Accessing:
 		vect1[2];
+
+function overloading:
+================
+	• float sum(float, float);int sum(int, int);
+		This will work.
+	• int return_data();
+	float return_data()
+		This will not work. Because, compiler will pick which function to go, based on parameters of the functions. As two functions don’t have parameters it will reject the code and will give compilation error.
+
+Default parameters:
+=================
+	• Function parameters can be set with default values during decleration.
+	e.g: int sum(int a, int b, int c =10);
+	       sum(1, 15, 19); //will work
+	       sum(8, 19); //will also work
+	
+
+Function pointer:
+==============
+Type definition:
+	typedef int (*arith)(int, int);
+	
+Decleration of func_ptr variables:
+	arith func_ptr;
+
+How to use function ptr:
+	func_ptr = &sum;
+	func_ptr(4,3);
+
+
+Stack overflow:
+===========
+stack size: windows=1MB, Linux= upto 8MB. If a stack is full than the limit then stack overflow happens
+Root causes:
+	• assigning so many stack variables. creating so much of stack memory.
+	• calling so many of functions. on top of another.
+
+Variable length arguments: (ellipsis)
+====================
+va_list list;
+va_start(list, count);
+va_arg(list, int) --> loop it until it returns -1. you will get the arguments.
