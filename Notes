@@ -241,3 +241,40 @@ Variable length arguments: (ellipsis)
 va_list list;
 va_start(list, count);
 va_arg(list, int) --> loop it until it returns -1. you will get the arguments.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+====================== Object Oriented Programming =====================
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Classes:
+A class contain:
+	• Member variables
+	• Member functions /Methods
+Member variables and member functions can be accessed using '.' operator.
+
+Objects:
+	→ Variables of type "Class".
+	→ Also known as instance. 
+
+Rule of Thumb:
+	• Use structs when you have only member variables. Use classes when you have member functions along with mumber variables.
+
+Access specifiers:
+	• Public:
+		○ Anyone can access value of these variables using '.' and object name.
+	• Private:
+		○ Only member functions can access variables.
+	• Protected
+		○ Only classes that inherit the class can access the variables. All the inherited varibales becomes private.
+
+Rule of Thumb:
+	• Make all the member variables as private. Make all the member functions public.
+
+Struct vs class:
+=============
+Struct				Class
+Everything is public by default	Everything is private by default
+Inherited content is public.	Inherited content is private.
+
+
