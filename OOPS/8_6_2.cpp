@@ -15,12 +15,20 @@ class sample{
 	void print(){
 		cout<<"Hello world"<<endl;
 	}
+	~sample(){
+		cout<<"This is desctructor"<<endl;
+	}
 };
 int main(){
 
-	sample s1(2);
-	sample s2();
+//	sample s1(2);
+/*	sample s2();
 	s2;
+*/
+	{
+	sample s3;
+	}
+	cout<<"Should print after destructor"<<endl;
 	return 0;
 }
 
